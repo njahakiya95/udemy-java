@@ -4,10 +4,11 @@ public class Main {
 
     public static void main(String[] args) {
 
-        byte byteNum = 25;
-        short shortNum = 75;
-        int intNum = 100;
-        long longNum = 50000 + (10 *(byteNum + shortNum + intNum));
+        byte byteNum = 10;
+        short shortNum = 20;
+        int intNum = 50;
+
+        long longNum = 50000L + (10L *(byteNum + shortNum + intNum));
 
         System.out.println(longNum);
     }
