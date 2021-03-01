@@ -1,9 +1,9 @@
 public class BarkingDog {
     public static boolean shouldWakeUp(boolean barking, int hourOfDay) {
-        if (hourOfDay < 8 || hourOfDay > 22) {
+        if (hourOfDay < 0 || hourOfDay > 23) {
             return True;
         }
-        else if (hourOfDay < 0 || hourOfDay > 23) {
+        else if (barking && hourOfDay < 8 || hourOfDay > 22) {
             return False;
         }
         else {
