@@ -4,7 +4,9 @@ public class MegaBytesConverter {
             System.out.println("Invalid Value");
         }
         else {
-            int megaBytes = kiloBytes % 1024;
+            int megaBytes = kiloBytes / 1024;
+            int remainingKiloBytes = kiloBytes % 1024;
+            System.out.println(kiloBytes + " KB = " + megaBytes + " MB and " + remainingKiloBytes + " KB");
         }
     }
 }
