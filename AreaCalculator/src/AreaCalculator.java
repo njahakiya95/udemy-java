@@ -11,7 +11,7 @@ public class AreaCalculator {
         if (x < 0 || y < 0) {
             return -1.0;
         } else {
-            return (x * y); 
+            return (x * y);
         }
     }
 }
