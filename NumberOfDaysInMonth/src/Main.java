@@ -1,24 +1,15 @@
 public class Main {
     public static void main(String[] args) {
-        isLeapYear(-1600);
-        isLeapYear(1600);
+
     }
 
     public static boolean isLeapYear(int year) {
-        if ( (year < 1) || (year > 9999 ) ) {
-            return false;
+        if ( ((year >= 1) && (year <= 9999)) && (((year % 4 == 0) || (year % 100 != 0)) || (year % 400 == 0)) ) {
+            return true;
         } else {
-            return ( ((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0) );
+            return false;
         }
     }
 
-    public static int getDaysInMonth(int month, int year) {
-        if ( (month < 1 || month > 12) || (year < 1 || year > 9999)) {
-            return -1;
-        } else {
-            switch(month) {
-                case 1:
-                    return Janu
-            }
-        }
+    public static
 }
