@@ -7,6 +7,13 @@ public class SumOddRange {
 
     public static int sumOdd(int start, int end) {
         int sum = 0;
-        if ()
+        if ((end >= start) && (start > 0)) {
+            for (int i = start; i <= end; i++) {
+                if (isOdd(i)) {
+                    sum+=i;
+                }
+            }
+            return sum;
+        } else return -1;
     }
 }
