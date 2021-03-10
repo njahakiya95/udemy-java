@@ -5,10 +5,14 @@ public class EvenDigitSum {
         }
 
         int sum = 0;
+        int lastDigit = 0;
         while (number > 0) {
-            int lastDigit = number % 10;
-            sum += lastDigit;
+            lastDigit = number % 10;
+            if (lastDigit % 2 == 0) {
+                sum += lastDigit;
+            }
+            number /= 10;
         }
-
+        return sum;
     }
 }
